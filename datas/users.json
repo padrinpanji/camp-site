@@ -1,23 +1,62 @@
 [
   {
     "id": 1,
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "age": 28,
-    "city": "New York"
+    "name": "Mountain View Campground",
+    "location": "Yosemite National Park, CA",
+    "type": "National Park",
+    "amenities": ["Restrooms", "Fire Pits", "Picnic Tables", "Water"],
+    "price": 35,
+    "rating": 4.8,
+    "description": "Beautiful mountain views with easy access to hiking trails",
+    "image": "/images/mountain-view.jpg",
+    "coordinates": { "lat": 37.8651, "lng": -119.5383 }
   },
   {
     "id": 2,
-    "name": "Jane Smith",
-    "email": "jane.smith@example.com",
-    "age": 32,
-    "city": "Los Angeles"
+    "name": "Lakeside Retreat",
+    "location": "Lake Tahoe, NV",
+    "type": "Private Campground",
+    "amenities": ["Showers", "Boat Launch", "Swimming", "WiFi"],
+    "price": 45,
+    "rating": 4.6,
+    "description": "Peaceful lakeside camping with water activities",
+    "image": "/images/lakeside.jpg",
+    "coordinates": { "lat": 39.0968, "lng": -120.0324 }
   },
   {
     "id": 3,
-    "name": "Mike Johnson",
-    "email": "mike.johnson@example.com",
-    "age": 25,
-    "city": "Chicago"
+    "name": "Desert Oasis Camp",
+    "location": "Joshua Tree, CA",
+    "type": "State Park",
+    "amenities": ["Restrooms", "Fire Rings", "Stargazing Area"],
+    "price": 25,
+    "rating": 4.4,
+    "description": "Perfect for stargazing and desert exploration",
+    "image": "/images/desert-oasis.jpg",
+    "coordinates": { "lat": 33.8734, "lng": -115.901 }
+  },
+  {
+    "id": 4,
+    "name": "Forest Haven",
+    "location": "Olympic National Forest, WA",
+    "type": "National Forest",
+    "amenities": ["Restrooms", "Hiking Trails", "Wildlife Viewing"],
+    "price": 20,
+    "rating": 4.7,
+    "description": "Dense forest camping with abundant wildlife",
+    "image": "/images/forest-haven.jpg",
+    "coordinates": { "lat": 47.8021, "lng": -123.6044 }
+  },
+  {
+    "id": 5,
+    "name": "Coastal Breeze Campground",
+    "location": "Big Sur, CA",
+    "type": "Private Campground",
+    "amenities": ["Showers", "Beach Access", "Store", "Laundry"],
+    "price": 55,
+    "rating": 4.9,
+    "description": "Stunning coastal views with direct beach access",
+    "image": "/images/coastal-breeze.jpg",
+    "coordinates": { "lat": 36.2704, "lng": -121.8081 }
   }
 ]

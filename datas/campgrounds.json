@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Gunung Bromo Camp",
+    "location": "Probolinggo, Jawa Timur",
+    "type": "Taman Nasional",
+    "amenities": ["Toilet", "Api Unggun", "Meja Piknik", "Air Bersih"],
+    "price": 150000,
+    "rating": 4.8,
+    "description": "Pemandangan gunung berapi yang menakjubkan dengan akses mudah ke jalur pendakian",
+    "image": "/images/bromo-camp.jpg",
+    "coordinates": { "lat": -7.9425, "lng": 112.953 }
+  },
+  {
+    "id": 2,
+    "name": "Danau Toba Retreat",
+    "location": "Samosir, Sumatera Utara",
+    "type": "Camping Swasta",
+    "amenities": ["Kamar Mandi", "Dermaga Perahu", "Kolam Renang", "WiFi"],
+    "price": 200000,
+    "rating": 4.6,
+    "description": "Camping tepi danau yang tenang dengan aktivitas air yang menyenangkan",
+    "image": "/images/toba-retreat.jpg",
+    "coordinates": { "lat": 2.6845, "lng": 98.8756 }
+  },
+  {
+    "id": 3,
+    "name": "Ranca Upas Camp",
+    "location": "Bandung, Jawa Barat",
+    "type": "Camping Alam",
+    "amenities": ["Toilet", "Area Api", "Spot Foto Rusa"],
+    "price": 125000,
+    "rating": 4.4,
+    "description": "Sempurna untuk melihat rusa dan menikmati udara pegunungan yang sejuk",
+    "image": "/images/ranca-upas.jpg",
+    "coordinates": { "lat": -7.1391, "lng": 107.3831 }
+  },
+  {
+    "id": 4,
+    "name": "Hutan Pinus Imogiri",
+    "location": "Yogyakarta, DIY",
+    "type": "Hutan Wisata",
+    "amenities": ["Toilet", "Jalur Hiking", "Spot Wildlife"],
+    "price": 100000,
+    "rating": 4.7,
+    "description": "Camping di hutan pinus dengan satwa liar yang melimpah",
+    "image": "/images/pinus-imogiri.jpg",
+    "coordinates": { "lat": -7.9553, "lng": 110.42 }
+  },
+  {
+    "id": 5,
+    "name": "Pantai Parangtritis Camp",
+    "location": "Bantul, Yogyakarta",
+    "type": "Camping Pantai",
+    "amenities": ["Kamar Mandi", "Akses Pantai", "Warung", "Laundry"],
+    "price": 175000,
+    "rating": 4.9,
+    "description": "Pemandangan pantai yang menakjubkan dengan akses langsung ke pantai",
+    "image": "/images/parangtritis.jpg",
+    "coordinates": { "lat": -8.025, "lng": 110.3294 }
+  },
+  {
+    "id": 6,
+    "name": "Kawah Putih Camp",
+    "location": "Ciwidey, Jawa Barat",
+    "type": "Wisata Alam",
+    "amenities": ["Toilet", "Parkir", "Spot Foto", "Pemandu"],
+    "price": 135000,
+    "rating": 4.5,
+    "description": "Camping dekat kawah vulkanik dengan pemandangan danau belerang yang unik",
+    "image": "/images/kawah-putih.jpg",
+    "coordinates": { "lat": -7.1661, "lng": 107.4019 }
+  }
+]
