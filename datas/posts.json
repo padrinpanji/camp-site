@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with Next.js",
+    "content": "Next.js is a powerful React framework that makes building web applications easier.",
+    "author": "John Doe",
+    "publishedAt": "2024-01-15T10:30:00Z",
+    "tags": ["nextjs", "react", "web-development"]
+  },
+  {
+    "id": 2,
+    "title": "Understanding TypeScript",
+    "content": "TypeScript adds static typing to JavaScript, making your code more reliable.",
+    "author": "Jane Smith",
+    "publishedAt": "2024-01-20T14:45:00Z",
+    "tags": ["typescript", "javascript", "programming"]
+  }
+]
