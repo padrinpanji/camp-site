@@ -8,25 +8,25 @@ export default function Header() {
 
   const corePages = [
     { 
-      href: '/pages', 
+      href: '/', 
       label: 'Beranda', 
       icon: '🏠',
       description: 'Halaman utama'
     },
     { 
-      href: '/pages/search', 
+      href: '/search', 
       label: 'Cari Camping', 
       icon: '🔍',
       description: 'Temukan tempat camping'
     },
     { 
-      href: '/pages/saved', 
+      href: '/saved', 
       label: 'Tersimpan', 
       icon: '❤️',
       description: 'Tempat favorit Anda'
     },
     { 
-      href: '/pages/about', 
+      href: '/about', 
       label: 'Tentang Kami', 
       icon: 'ℹ️',
       description: 'Informasi perusahaan'

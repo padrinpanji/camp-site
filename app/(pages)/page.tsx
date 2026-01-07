@@ -30,13 +30,13 @@ export default function HomePage() {
             
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
               <Link 
-                href="/pages/search"
+                href="/search"
                 className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-semibold text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 🔍 Mulai Pencarian
               </Link>
               <Link 
-                href="/pages/about"
+                href="/about"
                 className="w-full sm:w-auto border-2 border-green-600 text-green-600 hover:bg-green-50 px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-semibold text-lg sm:text-xl transition-all duration-300 transform hover:scale-105"
               >
                 📖 Pelajari Lebih Lanjut
@@ -93,7 +93,7 @@ export default function HomePage() {
                     <span className="text-gray-500 text-sm">/malam</span>
                   </div>
                   <Link
-                    href={`/pages/detail/${campground.id}`}
+                    href={`/detail/${campground.id}`}
                     className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm"
                   >
                     Lihat Detail
@@ -106,7 +106,7 @@ export default function HomePage() {
 
         <div className="text-center">
           <Link 
-            href="/pages/search"
+            href="/search"
             className="inline-flex items-center bg-white hover:bg-gray-50 text-green-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-lg border-2 border-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Lihat Semua Tempat Camping

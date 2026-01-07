@@ -40,7 +40,7 @@ export default function SavedPage() {
               </p>
             </div>
             <Link 
-              href="/pages/search" 
+              href="/search" 
               className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
             >
               Cari Lagi
@@ -60,7 +60,7 @@ export default function SavedPage() {
               Mulai jelajahi dan simpan tempat camping favorit Anda untuk akses mudah nanti
             </p>
             <Link 
-              href="/pages/search"
+              href="/search"
               className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
             >
               Jelajahi Sekarang
@@ -119,7 +119,7 @@ export default function SavedPage() {
                       <span className="text-gray-500 text-sm">/malam</span>
                     </div>
                     <Link
-                      href={`/pages/detail/${campground.id}`}
+                      href={`/detail/${campground.id}`}
                       className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm"
                     >
                       Lihat Detail

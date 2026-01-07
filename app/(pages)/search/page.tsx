@@ -119,7 +119,7 @@ export default function SearchPage() {
                   <div className="text-xs sm:text-sm text-yellow-500">⭐ {campground.rating}</div>
                 </div>
                 <Link 
-                  href={`/pages/detail/${campground.id}`}
+                  href={`/detail/${campground.id}`}
                   className="bg-green-600 hover:bg-green-700 text-white px-3 sm:px-4 py-2 rounded transition-colors text-center text-xs sm:text-sm"
                 >
                   Lihat Detail

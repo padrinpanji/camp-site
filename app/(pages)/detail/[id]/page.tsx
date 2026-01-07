@@ -89,7 +89,7 @@ Terima kasih! 🏕️`
       <div className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-3 sm:py-4">
           <Link 
-            href="/pages/search" 
+            href="/search" 
             className="inline-flex items-center text-green-600 hover:text-green-700 transition-colors text-sm sm:text-base"
           >
             ← Kembali ke Pencarian
