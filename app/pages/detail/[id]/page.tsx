@@ -1,11 +1,12 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
-import campgrounds from '../../../datas/campgrounds.json'
-import { formatRupiahSimple } from '../../utils/currency'
+import campgrounds from '../../../../datas/campgrounds.json'
+import { formatRupiahSimple } from '../../../utils/currency'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -21,9 +22,35 @@ interface PageProps {
 
 export default function DetailPage({ params }: PageProps) {
   const campground = campgrounds.find(c => c.id === parseInt(params.id))
+  const [isSaved, setIsSaved] = useState(false)
 
   if (!campground) {
     notFound()
+  }
+
+  useEffect(() => {
+    const saved = localStorage.getItem('savedCampgrounds')
+    if (saved) {
+      const savedIds = JSON.parse(saved)
+      setIsSaved(savedIds.includes(campground.id))
+    }
+  }, [campground.id])
+
+  const handleSave = () => {
+    const saved = localStorage.getItem('savedCampgrounds')
+    let savedIds = saved ? JSON.parse(saved) : []
+    
+    if (isSaved) {
+      // Remove from saved
+      savedIds = savedIds.filter((id: number) => id !== campground.id)
+      setIsSaved(false)
+    } else {
+      // Add to saved
+      savedIds.push(campground.id)
+      setIsSaved(true)
+    }
+    
+    localStorage.setItem('savedCampgrounds', JSON.stringify(savedIds))
   }
 
   const handleWhatsAppEnquiry = () => {
@@ -62,7 +89,7 @@ Terima kasih! 🏕️`
       <div className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-3 sm:py-4">
           <Link 
-            href="/search" 
+            href="/pages/search" 
             className="inline-flex items-center text-green-600 hover:text-green-700 transition-colors text-sm sm:text-base"
           >
             ← Kembali ke Pencarian
@@ -205,8 +232,25 @@ Terima kasih! 🏕️`
                     </svg>
                     Pesan Sekarang
                   </button>
-                  <button className="border-2 border-green-600 text-green-600 hover:bg-green-50 px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 text-sm sm:text-base">
-                    ❤️ Simpan
+                  <button 
+                    onClick={handleSave}
+                    className={`border-2 ${isSaved ? 'border-red-500 text-red-500 hover:bg-red-50' : 'border-green-600 text-green-600 hover:bg-green-50'} px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 text-sm sm:text-base flex items-center justify-center gap-2`}
+                  >
+                    {isSaved ? (
+                      <>
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                        </svg>
+                        Tersimpan
+                      </>
+                    ) : (
+                      <>
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        Simpan
+                      </>
+                    )}
                   </button>
                 </div>
               </div>

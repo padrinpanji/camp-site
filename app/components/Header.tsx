@@ -8,19 +8,25 @@ export default function Header() {
 
   const corePages = [
     { 
-      href: '/', 
+      href: '/pages', 
       label: 'Beranda', 
       icon: '🏠',
       description: 'Halaman utama'
     },
     { 
-      href: '/search', 
+      href: '/pages/search', 
       label: 'Cari Camping', 
       icon: '🔍',
       description: 'Temukan tempat camping'
     },
     { 
-      href: '/about', 
+      href: '/pages/saved', 
+      label: 'Tersimpan', 
+      icon: '❤️',
+      description: 'Tempat favorit Anda'
+    },
+    { 
+      href: '/pages/about', 
       label: 'Tentang Kami', 
       icon: 'ℹ️',
       description: 'Informasi perusahaan'
@@ -44,7 +50,7 @@ export default function Header() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
           {corePages.map((page) => (
             <Link
               key={page.href}
